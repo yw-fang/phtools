@@ -1,0 +1,5 @@
+numpy
+pandas
+pymatgen
+phonopy
+matplotlib
