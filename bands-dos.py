@@ -152,7 +152,8 @@ with open('sumo_band.yaml', 'r') as stream:
 
 df.plot(x='distance', color='orange',ax=ax1, legend=False)
     # ax.plot(df['distance'], df['band1'], color='blue', label='band1')
-ax1.set_ylim([-2,80])
+ylim = [-2,80]
+ax1.set_ylim(ylim)
 ax1.set_xlim([0,df['distance'].max()])
 print(df['distance'].max())
 # add a horizontal line at y=0
@@ -222,7 +223,7 @@ try:
         dos[i] = dos[dos.columns[dos.columns.str.contains(i)]].sum(axis=1)
         # print('dos[i]', dos[i])
         ax2.plot(dos[i], dos['thz'], label = i)
-        ax2.set_ylim([-2,80])
+        ax2.set_ylim(ylim)
         # remove the xticklabels for ax2
         ax2.set_xticklabels([])
         ax2.set_yticklabels([])
