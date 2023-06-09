@@ -1,6 +1,6 @@
 # phtools
 
-Tools for the visualization of phonon results obtained from first-principles claculations.
+Tools for the visualization of phonon results obtained from first-principles claculations. Currently, it supports the results from VASP, and Phonopy.
 
 # Requirements
 
